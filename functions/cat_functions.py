@@ -12,10 +12,12 @@ def get_cats_info(cat_path):
             # separating and adding the data into dictionary
             for cat in cats:
 
+                id, name, age  = cat.split(',')
+
                 cat_dict = {
-                    "id": cat.split(',')[0].strip(),
-                    "name": cat.split(',')[1].strip(),
-                    "age": cat.split(',')[2].strip()
+                    "id": id,
+                    "name": name,
+                    "age": age.strip()
                 }
 
                 # adding dictionaries into the list
