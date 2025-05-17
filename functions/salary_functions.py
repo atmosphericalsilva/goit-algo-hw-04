@@ -15,7 +15,7 @@ def total_salary(salary_path):
 
             # checking if list is not empty
             if float_salary:
-                return (sum(float_salary), sum(float_salary) / len(float_salary))
+                return [sum(float_salary), sum(float_salary) / len(float_salary)]
             
             else:
                 return "no salaries provided"
